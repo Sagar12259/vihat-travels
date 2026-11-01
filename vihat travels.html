@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રી વિહત ટ્રાવેલ્સ - સાગર દેસાઈ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            color: #f6ad55;
+            letter-spacing: 1px;
+        }
+
+        .logo p {
+            font-size: 0.9rem;
+            color: #e2e8f0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f6ad55;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80') center/cover;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #f6ad55;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #20ba5a;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Rate Card Table Styles */
+        .rate-card-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .rate-card-section h2 {
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #2b6cb0;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        tr:hover {
+            background-color: #f7fafc;
+        }
+
+        /* Terms & Conditions Box */
+        .terms-box {
+            background: #fffaf0;
+            border-left: 5px solid #dd6b20;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .terms-box h3 {
+            color: #c05621;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .terms-box ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-box h2 {
+            color: #1a365d;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            margin-bottom: 12px;
+            color: #4a5568;
+            font-size: 1.05rem;
+        }
+
+        .address-list {
+            margin-top: 15px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .address-item {
+            background: #f7fafc;
+            padding: 12px 15px;
+            border-left: 4px solid #2b6cb0;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: #a0aec0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #20ba5a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>શ્રી વિહત ટ્રાવેલ્સ</h1>
+            <p>સંચાલક: સાગર દેસાઈ</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">હોમ</a></li>
+                <li><a href="#rates">રેટ કાર્ડ</a></li>
+                <li><a href="#contact">સંપર્ક</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <h2>શ્રી વિહત ટ્રાવેલ્સ</h2>
+        <p>કબ અને ટેમ્પો ટ્રાવેલર ભાડે આપવાની ઉત્તમ સેવા - સાગર દેસાઈ</p>
+        <a href="https://wa.me/917228802190?text=મારે%20કાર/ટેમ્પો%20ટ્રાવેલર%20બુક%20કરાવવો%20છે." class="hero-btn" target="_blank">💬 WhatsApp પર બુકિંગ કરો</a>
+    </section>
+
+    <!-- Rate Card Section -->
+    <div class="container" id="rates">
+        <div class="rate-card-section">
+            <h2>🚖 CAB RENTAL RATE CARD</h2>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>વાહનનું નામ (Vehicle Type)</th>
+                            <th>प्रति કિલોમીટર ભાડું (Per KM Rate)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🚗 Sedan</td>
+                            <td><strong>₹12 / km</strong></td>
+                        </tr>
+                        <tr>
+                            <td>🛞 Ertiga</td>
+                            <td><strong>₹14 / km</strong></td>
+                        </tr>
+                        <tr>
+                            <td>🚘 Innova / Crysta</td>
+                            <td><strong>₹18 – ₹19 / km</strong></td>
+                        </tr>
+                        <tr>
+                            <td>🚌 Tempo Traveller (17 Seater)</td>
+                            <td><strong>₹30 / km</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Terms & Conditions -->
+            <div class="terms-box">
+                <h3>📋 નિયમો અને શરતો (Round Trip):</h3>
+                <ul>
+                    <li><strong>મિનિમમ રનિંગ (Minimum Running):</strong> ૩૦૦ કિમી અથવા ૧૨ કલાક પ્રતિ દિવસ.</li>
+                    <li><strong>ડ્રાઇવર એલાઉન્સ (Driver Allowance):</strong> ₹૩૦૦ / દિવસ.</li>
+                    <li><strong>વધારાના ખર્ચ (Extra Charges):</strong> ટોલ ટેક્સ (Toll Tax), પાર્કિંગ (Parking) અને સ્ટેટ પરમિટ (State Permit) ના ચાર્જ નિયમ મુજબ અલગથી રહેશે.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="container" id="contact">
+        <div class="contact-box">
+            <h2>સંપર્ક અને બુકિંગ માટે</h2>
+            <p><strong>સંચાલક:</strong> સાગર દેસાઈ</p>
+            <p><strong>મોબાઈલ નંબર:</strong> <a href="tel:7228802190" style="color: #2b6cb0; text-decoration: none; font-weight: bold;">+91 7228802190</a></p>
+            <p><strong>ઈમેલ:</strong> <a href="mailto:r.desaisagar@gmail.com" style="color: #2b6cb0; text-decoration: none;">r.desaisagar@gmail.com</a></p>
+            
+            <h3 style="color: #1a365d; margin-top: 20px; margin-bottom: 10px;">અમારી શાખાઓ / સરનામાં:</h3>
+            <div class="address-list">
+                <div class="address-item"><strong>ગાંધીનગર શાખા:</strong> ગાંધીનગર, ગુજરાત.</div>
+                <div class="address-item"><strong>શંખેશ્વર શાખા:</strong> શંખેશ્વર, ગુજરાત.</div>
+                <div class="address-item"><strong>અમદાવાદ શાખા:</strong> અમદાવાદ, ગુજરાત.</div>
+            </div>
+            
+            <a href="https://wa.me/917228802190?text=હલો%20સાગરભાઈ,%20મારે%20ગાડી%20બુક%20કરાવવી%20છે." class="whatsapp-btn" target="_blank">💬 WhatsApp પર ચેટ કરો</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Shree Vihat Travels. All Rights Reserved.</p>
+        <p>તમારી સફર, અમારો વિશ્વાસ | આરામદાયક મુસાફરી.</p>
+    </footer>
+
+</body>
+</html>
