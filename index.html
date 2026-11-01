@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihat Travels - Car & Tempo Traveller Rental</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #ffcc00;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #203a43;
+            font-size: 2rem;
+        }
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #2c5364;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .price {
+            font-size: 1.3rem;
+            color: #d9534f;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        .terms-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+        }
+        .terms-box h3 {
+            color: #203a43;
+            margin-bottom: 1rem;
+        }
+        .terms-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .terms-box li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        }
+        .btn-call {
+            background-color: #0275d8;
+        }
+        .btn-whatsapp {
+            background-color: #25d366;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>?? Vihat Travels</h1>
+        <p>Safe, Reliable & Comfortable Car & Tempo Traveller Rental Services</p>
+        <div class="contact-buttons" style="margin-top: 1rem;">
+            <a href="tel:7228802190" class="btn btn-call">?? Call Now: 7228802190</a>
+            <a href="https://wa.me/917228802190?text=Hello%20Vihat%20Travels,%20I%20want%20to%20book%20a%20vehicle." class="btn btn-whatsapp" target="_blank">?? WhatsApp Booking</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Fleet Section -->
+        <h2 class="section-title">Our Fleet & Rates</h2>
+        <div class="fleet-grid">
+            <div class="card">
+                <h3>?? Sedan</h3>
+                <div class="price">?12 / km</div>
+                <p>Comfortable for small families and local/outstation city travel.</p>
+            </div>
+            <div class="card">
+                <h3>?? Ertiga</h3>
+                <div class="price">?14 / km</div>
+                <p>Best choice for medium families and group tours.</p>
+            </div>
+            <div class="card">
+                <h3>?? Innova / Crysta</h3>
+                <div class="price">?18 – ?19 / km</div>
+                <p>Premium and luxurious ride for long journeys & family comfort.</p>
+            </div>
+            <div class="card">
+                <h3>?? Tempo Traveller</h3>
+                <div class="price">?30 / km (17 Seater)</div>
+                <p>Perfect for large family groups, pilgrimage, and tours.</p>
+            </div>
+        </div>
+
+        <!-- Terms & Conditions Section -->
+        <div class="terms-box">
+            <h3>?? Terms & Conditions (Round Trip)</h3>
+            <ul>
+                <li>?? <strong>Minimum Running:</strong> 300 km / 12 Hours per day</li>
+                <li>????? <strong>Driver Allowance (DA):</strong> ?300 / day</li>
+                <li>??? <strong>Extra Charges:</strong> Toll Tax, Parking, and State Permit charges are extra (as per actuals).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vihat Travels. All Rights Reserved. | Contact: 7228802190</p>
+    </footer>
+
+</body>
+</html>
